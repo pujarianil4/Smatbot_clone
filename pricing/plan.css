@@ -1,9 +1,80 @@
 h3{
     
-    text-align: center;
+    margin-left: 10px;
     
     font-size: 20px;
-    color:grey;
+  
     font-family: 'Saira', sans-serif;
 
+}
+h4{
+    color: grey;
+   
+    font-family: 'Saira', sans-serif;
+}
+div>p{
+    margin-top: 10px;
+    font-size: 20px;
+   
+    font-family: 'Saira', sans-serif;
+}
+#plans>div:nth-child(3),#plans>div:nth-child(8),#plans>div:nth-child(11),#plans>div:nth-child(13),#plans>div:nth-child(25),#plans>div:nth-child(37),
+#plans>div:nth-child(46),#plans>div:nth-child(49),#plans>div:nth-child(51),#plans>div:nth-child(56),#plans>div:nth-child(59){
+    background-color: rgb(136, 173, 211);
+    font-family: 'Saira', sans-serif;
+}
+
+h2{
+    color:rgb(47, 162, 207);
+    margin-left: 20px;
+    font-family: 'Saira', sans-serif;
+    font-size: 30px;
+    
+}
+#free-2>div:nth-child(3),#free-2>div:nth-child(8),#free-2>div:nth-child(11),#free-2>div:nth-child(13),#free-2>div:nth-child(25),#free-2>div:nth-child(37),
+#free-2>div:nth-child(46),#free-2>div:nth-child(49),#free-2>div:nth-child(51),#free-2>div:nth-child(56),#free-2>div:nth-child(59){
+    background-color: rgb(136, 173, 211);
+    font-family: 'Saira', sans-serif;
+}
+#starter-2>div:nth-child(3),#starter-2>div:nth-child(8),#starter-2>div:nth-child(11),#starter-2>div:nth-child(13),#starter-2>div:nth-child(25),#starter-2>div:nth-child(37),
+#starter-2>div:nth-child(46),#starter-2>div:nth-child(49),#starter-2>div:nth-child(51),#starter-2>div:nth-child(56),#starter-2>div:nth-child(59){
+    background-color: rgb(136, 173, 211);
+    font-family: 'Saira', sans-serif;
+}
+#pro-2>div:nth-child(3),#pro-2>div:nth-child(8),#pro-2>div:nth-child(11),#pro-2>div:nth-child(13),#pro-2>div:nth-child(25),#pro-2>div:nth-child(37),
+#pro-2>div:nth-child(46),#pro-2>div:nth-child(49),#pro-2>div:nth-child(51),#pro-2>div:nth-child(56),#pro-2>div:nth-child(59){
+    background-color: rgb(136, 173, 211);
+    font-family: 'Saira', sans-serif;
+}
+
+
+#Signup2{
+    background-color:#6c5ce7 ;
+    width: 70%;
+    height: 55%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+#Try2{
+    background-color:#110858 ;
+    width: 70%;
+    height: 55%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
+}
+#pro-btn2{
+    background-color:hotpink ;
+    width: 70%;
+    height: 55%;
+    border-radius: 10px;
+    margin-left: 20px;
+    margin-top: 30px;
+    color: white;
+    font-size: 20px;
 }
