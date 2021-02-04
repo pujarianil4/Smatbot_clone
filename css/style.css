@@ -186,12 +186,14 @@ display:none ;
     width: 700px;
 
     margin: auto;
+    box-shadow: 2px 2px 5px gray;
     
 }
 .total-client >div{
    margin: 10px 40px;
    color: rgb(99, 99, 99);
    font-family: Arial, Helvetica, sans-serif;
+   
 }
 .center{
     margin: auto;
@@ -260,7 +262,11 @@ display:none ;
   
     height: 150px;
     padding: 20px;
+    
 
+}
+.avail > div:hover{
+    box-shadow: 2px 2px 5px gray;
 }
 #usercase > div{
     
@@ -361,6 +367,20 @@ display:none ;
     font-weight: 100;
     font-size: 20px;
     text-decoration: none;
+}
+
+.inq-section{
+    height: 500px;
+    background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
+}
+.inq-section > h1{
+    color: white;
+    text-align: center;
+    padding-top: 200px;
+}
+.inq-section > div{
+    margin: auto;
+    margin-top: 30px;
 }
 @media(max-width:1140px){
     .nav-btn{
