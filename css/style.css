@@ -405,7 +405,7 @@ display:none ;
         position:static
     }
     .navbar .menu-list{
-     
+      position: absolute;
        top: 0;
         left: 0;
         height: 100%;
@@ -422,7 +422,7 @@ display:none ;
     .nav-btn{
         display: none;
     }
-    .whatsapp-new-header-image {
+    .new-header {
         display: none;
     }
 
