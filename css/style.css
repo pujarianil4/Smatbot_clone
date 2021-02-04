@@ -1,58 +1,82 @@
 body{
     width: 100%;
-  /*nav start  */
-}
-#logo{
-    width: 200px;
-  
-
-}
-#logo > a > img{
-    width: 200px;
-    padding-left: 10%;
-    padding-top: 5%;
-}
-#header{
-    display: flex;
     font-family: 'Roboto Condensed', sans-serif;
-    height: 80px;
- 
-  
 }
-.navbar{
-    display: flex;
-    
-    padding-top: 8px;
-    margin-left: 15%;
+/* navbar */
+.content{
+padding:  0px 30px;
 
-
-}
+} 
 .flex{
     display: flex;
 }
-.nav > td {
-     margin: 2%;
-     color: black;
-     margin-top: 15px;
+.navbar{
+    position: fixed;
+    z-index: 10;
+    width: 100%;
+    padding: 10px 0;
+    background-color: white;
+    top: 0;
+    
 }
-.nav > td > a{
-    color: black;
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 50px;
+    
+  
+}
+.navbar .menu-list{
+    list-style: none;
+}
+.navbar .menu-list{
+    display: inline-flex;
+  
+}
+.menu-list li a{
+    color: #000;
     text-decoration: none;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    margin-left: 30px;
+    transition: all 0.3s ease;
     text-transform: uppercase;
-    letter-spacing: .01em;
-    margin-top: 20px;
-    font-weight: 550;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.menu-list > li>a:hover{
+ color: #8F5CF9;
+}
+.checkbtn{
+    font-size: 25px;
+    color: #000;
+    float: right;
+    margin-right: 30px;
+    display: none;
+}
+#check{
+    display: none;
+
+}
+.new-header {
+    position: absolute;;
+    top: 12px;
+    height: 25px;
+}
+.menu-list > li:nth-child(11),.menu-list > li:nth-child(12){
+    display: none;
+  
 }
 
-#nav-btn{
+.nav-btn{
     display: flex;
     height: 40px;
     margin-top: 20px;
-    margin-left:190px;
+    margin-left:30px;
+    margin-bottom: 20px;
   
 }
-#nav-btn > button{
+.nav-btn > button{
  width: 150px;
  text-transform: uppercase;
  font-size: 12px;
@@ -65,35 +89,23 @@ body{
  letter-spacing: 2px;
  
 }
-#nav-btn > button:nth-child(1){
+.nav-btn > button:nth-child(1){
     background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
     color: white;
     border: none;
 }
-#nav-btn > button:nth-child(1):hover{
+.nav-btn > button:nth-child(1):hover{
     background: white;
     color: black;
     border: 2px solid #8252FA;
 }
-.whatsapp-new-header-image {
-    position: absolute;
-    top: 12px;
-    height: 25px;
+.medi-screen{
+display:none ;
 }
-@media (max-width: 1262px){
-   .flex{
-       flex-direction: column-reverse;
-      margin-left: 30%;
-   }
-  .navbar{
-     
-      margin-left: 0%;
-  }
-  .nav > td:nth-child(2){
-      padding-top: 2px;
-  }
-}
-/* nav end */
+
+
+
+/* front page */
 #header-page{
     background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
     height: 90vh;
@@ -132,6 +144,7 @@ body{
     width: 450px;
     background-color: white;
     border-radius: 30px;
+    border: 2px solid #E58C5E ;
    
 }
 
@@ -166,5 +179,209 @@ body{
  margin-left: 10px;
  border: 1px solid white;
 }
+/* front page end */
+/* our client */
+.total-client{
+    display: flex;
+    width: 700px;
 
+    margin: auto;
+    
+}
+.total-client >div{
+   margin: 10px 40px;
+   color: rgb(99, 99, 99);
+   font-family: Arial, Helvetica, sans-serif;
+}
+.center{
+    margin: auto;
 
+    width: 200px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.divider{
+    height: 200px;
+}
+.clientele{
+    width: 95%;
+   
+    margin: auto;
+}
+.clientele-tag{
+  
+    width: 200px;
+    margin: auto;
+    margin-top: 30px;
+}
+.client-logo{
+    display: grid;
+    gap: 28px;
+    margin-left: 200px;
+    grid-template-columns: 15% 15% 15% 15% 15%;
+    grid-template-rows: 100px 100px 100px;
+    margin-top: 50px;
+}
+
+.img-width{
+    width: 100%;
+    
+}
+.omnichannel > div{
+    width: 80%;
+   
+    margin: auto;
+}
+.omni-header > h1{
+    
+    text-align: center;
+}
+.omni-header > p{
+  text-align: center;
+}
+.chatbot > h2{
+    font-size: 18px;
+}
+.chatbot{
+    font-family: 'Roboto Condensed', sans-serif;
+}
+.available > h1{
+    text-align: center;
+}
+.avail{
+    display: flex;
+    width: 60%;
+    margin: auto;
+    margin-top: 80px;
+}
+.avail > div {
+    width: 18%;
+    margin: 20px;
+    margin: auto;
+    border: 1px solid red;
+    height: 150px;
+    padding: 20px;
+    
+}
+@media(max-width:1140px){
+    .nav-btn{
+        flex-direction: column;
+        height: 10px;
+    }
+    .center{
+        display: block;
+    }
+    #free-trial {
+        height: 40px;
+    }
+}
+@media (max-width:960px){
+   
+    .navbar {
+        position: static;
+    }
+    .large-screen{
+        display: none;
+    }
+    .medi-screen{
+        display: contents;
+    }
+    #free-trial {
+        height: 40px;
+    }
+    .client-logo{
+        display: grid;
+        margin-left: 30px;
+        gap: 28px;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-template-rows: 100px 100px 100px;
+        margin-top: 50px;
+    }
+  
+}
+@media (max-width: 600px){
+    /* navbar */
+
+    .navbar{
+        position:static
+    }
+    .navbar .menu-list{
+     
+       top: 0;
+        left: 0;
+        height: 100%;
+        width: 80%;
+        max-width: 400px;
+        background: #222;
+        display: block;
+        padding: 40px 0;
+        text-align: center;
+        color: white;
+        display: none;
+       
+    }
+    .nav-btn{
+        display: none;
+    }
+    .whatsapp-new-header-image {
+        display: none;
+    }
+
+    .navbar .menu-list>li{
+        margin-top: 25px;
+
+    }
+    .navbar .menu-list > li >a{
+        font-size: 23px;
+        color: white;
+    }
+    .navbar .menu-list > li > a:hover{
+        color: cyan;
+    }
+    .checkbtn{
+      display: block;
+    }
+    #check:checked ~ .menu-list{
+        display: block;
+    }
+    .menu-list > li:nth-child(11),.menu-list > li:nth-child(12){
+        display: block;
+        background-color: blueviolet;
+      
+    }
+    /* header page */
+    #tag-line{
+        margin-top: 50px;
+    }
+    /* client */
+    .total-client{
+        flex-direction: column;
+      
+    }
+    .center{
+        display: block;
+        margin-top: 20px;
+        
+    }
+   
+    #free-trial {
+        height: 40px;
+    }
+    .divider{
+        height: 20px;
+        display: none
+    }
+    .total-client > div{
+      padding-left: 170px;
+       
+        width: 300px;
+    }
+    .client-logo{
+        display: grid;
+        margin-left: 50px;
+        gap: 28px;
+        grid-template-columns: 45% 45%;
+        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+        margin-top: 50px;
+    }
+   
+}

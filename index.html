@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,66 +10,166 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </head>
-<body>
-    <!-- Header Start -->
-    <div id="header">
-        <div id="logo">
-           <a href="index.html"> <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png" alt="logo"/></a>
-        </div>
-        <div class="flex">
-        <table class="navbar">
 
-            <tr class="navbar nav">
-                <td><a href="">Home</a></td>
-                <td><a href="">Whatsapp</a>
-                    <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/new_in_header.png" class="whatsapp-new-header-image"></td>
-                <td><a href="">Usecase</a></td>
-                <td><a href="">Templates</a></td>
-                <td><a href="">Pricing</a></td>
-                <td><a href="">Blog</a></td>
-                <td><a href="">Partners</a></td>
-                <td><a href="#">Login</a></td>
-             </tr>
-        </table>
-    
-        <div id="nav-btn">
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
+        <div class="content">
+            <div class="logo"><a href="#">
+                    <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png"
+                        alt="logo" width="180px" />
+                </a></div>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <ul class="menu-list">
+                <label for="check" class="checkbtn">
+                    <i class="fas fa-times" style="color: rebeccapurple;"></i>
+                </label>
+                <li><a href="#"></a></li>
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">Whatsapp</a>
+                    <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/new_in_header.png"
+                        class="new-header"></td>
+                </li>
+                <li><a href="#">usercase</a></li>
+                <li><a href="#">Templates</a></li>
+                <li><a href="#">Pricing</a></li>
+                <li><a href="#">BLOG</a></li>
+                <li><a href="partners.html">Partners</a></li>
+                <li><a href="#">Login</a></li>
+                <li><a href="#">Free trial</a></li>
+                <li><a href="#">Request Demo</a></li>
+
+            </ul>
+
+            <div class="nav-btn large-screen">
+                <button>Free Trial</button>
+                <button>Request demo</button>
+            </div>
+
+        </div>
+        <div class="nav-btn medi-screen">
             <button>Free Trial</button>
             <button>Request demo</button>
         </div>
+    </nav>
+    <!-- navbar end -->
+    <!-- header page -->
+    <div id="header-page">
+        <div id="tag-line">
+            <h1>Build ChatBots for all your business needs</h1>
+            <p class="f-size-m">No coding, Easy customization, Sensible pricing</p>
+            <p class="f-size-s">SmatBot is a conversational bot building platform to create customizable chatbots for
+                Lead generation, Live chat support,
+                Interactive Landing Pages, Surveys, Enquiries, Appointments, Feedback and Suggestions for your business.
+            </p>
+            <h1>Try smatbot for free</h1>
+            <div id="input-mob">
+                <select class="input-height">
+                    <option value="india">IN</option>
+                    <option value="UK">UK</option>
+                    <option value="US">US</option>
+
+                </select>
+                <input type="number" id="mobile" placeholder="Enter Your Mobile" class="input-height1" />
+                <button class="input-height started">Get Started</button>
+            </div>
+            <div class="flex">
+                <h1>Video Demo</h1>
+                <a href="#"><img src="media/video.png" alt="video" /></a>
+            </div>
+        </div>
+        <div>
+            <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/home-right_compressed.png"
+                alt="tag-image" />
+        </div>
+    </div>
+    <!-- header page end -->
+    <!-- our client section -->
+    <div class="clients">
+        <div class="total-client">
+            <div>
+                <h1>23 Lakh+</h1>
+                <h2>Chat Initiated</h2>
+            </div>
+            <div>
+                <h1>23 Lakh+</h1>
+                <h2>Chat Initiated</h2>
+            </div>
+            <div>
+                <h1>23 Lakh+</h1>
+                <h2>Chat Initiated</h2>
+            </div>
+        </div>
+    </div>
+    <div class="divider"></div>
+    <div class="nav-btn center">
+        <button id="free-trial">Free Trial</button>
     </div>
 
+    <div class="clientele">
+        <div>
+            <h1 class="clientele-tag">Our Clientele</h1>
+        </div>
+        <div class="client-logo">
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/servify.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/Goa_electricity_dept.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/homeo_care.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/mku.png" class="img-width"/> </div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/easy_pay.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/nimhans.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/customer_logos/rfc.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/sos.png" class="img-width"/></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/lpu.png" class="img-width"/></div>
+            <div><img src=" https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/maha_chem.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/hysus.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/first_meridian.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/pearl_yamaha.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/wish_health.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/client_logos/hearing_sol.png" class="img-width" alt=""></div>
+        </div>
     </div>
-<!-- Header End -->
-
-<div id="header-page">
-<div id="tag-line">
-    <h1>Build ChatBots for all your business needs</h1>
-    <p class="f-size-m">No coding, Easy customization, Sensible pricing</p>
-    <p class="f-size-s">SmatBot is a conversational bot building platform to create customizable chatbots for Lead generation, Live chat support, 
-        Interactive Landing Pages, Surveys, Enquiries, Appointments, Feedback and Suggestions for your business.</p>
-     <h1>Try smatbot for free</h1>   
-     <div id="input-mob">
-        <select class="input-height">
-            <option value="india">IN</option>
-            <option value="UK">UK</option>
-            <option value="US">US</option>
-    
-        </select>
-        <input type="number" id="mobile" placeholder="Enter Your Mobile" class="input-height1"/>
-        <button class="input-height started">Get Started</button>
-     </div>
-    <div class="flex">
-        <h1>Video Demo</h1> 
-        <a href="#"><img src="media/video.png" alt="video"/></a>
+    <div class="divider"></div>
+    <div class="omnichannel">
+        <div class="omni-header">
+            <p>OMNICHANNEL CHATBOT</p>
+            <h1>Unified Chatbot Experience For Website, Whatsapp, Blog, Facebook Messenger And Mobile Applications</h1>
+        </div>
+        <div class="flex" style="width: 80%;">
+            <div class="chatbot">
+                <h2>Website Chatbot</h2>
+                <p>Install SmatBot on your website and automate the engagement with your visitors.</p>
+                <h2>WhatsApp Chatbot</h2>
+                <p>Automate your whatsapp business conversations through SmatBot.</p>
+                <h2>Blog Chatbot</h2>
+                <p>Install SmatBot on your blog and collect feedback, conduct surveys from your readers.</p>
+                <h2>Facebook Messenger Chatbot</h2>
+                <p>Install SmatBot on your messenger to automate the engagement with your audience.</p>
+                <h2>Mobile app Chabot</h2>
+                <p>Integrate and Install SmatBot into your mobile application and never worry about giving customer support again.</p>
+            </div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/channel_smatbot_compressed.png" alt="image"/>
+            </div>
+        </div>
     </div>
-</div>
-<div>
-    <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/home-right_compressed.png" alt="tag-image"/>
-</div>
-</div>
+    <div class="divider"></div>
+    <div class="available">
+        <h1>SmatBot Is Now Available On</h1>
+        <div class="avail">
+            <div><img src="https://s3.ap-south-1.amazonaws.com/custpostimages/crm_networks/freshdesk.png" alt="image" class="img-width"/></div>
+            <div><img src="https://s3.ap-south-1.amazonaws.com/custpostimages/crm_networks/zapier.png" class="img-width" alt=""/></div>
+            <div><img src="https://s3.ap-south-1.amazonaws.com/custpostimages/crm_networks/freshsales.png" class="img-width" alt=""></div>
+            <div><img src="https://custpostimages.s3.ap-south-1.amazonaws.com/crm_networks/zoho.png" class="img-width" alt=""></div>
+        </div>
+    </div>
 </body>
+
 </html>
