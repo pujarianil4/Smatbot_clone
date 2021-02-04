@@ -1,0 +1,41 @@
+
+#plans>div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    display: grid;
+    grid-area: plans;
+    
+}
+#free-2>div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    display: grid;
+    grid-area: free-2;
+    
+}
+#starter-2>div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    display: grid;
+    grid-area: starter-2;
+    
+}
+#pro-2>div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    display: grid;
+    grid-area: pr0-2;
+    
+}
+#enter-2>div{
+    width: 100%;
+    height: 70px;
+    border: 1px solid gray;
+    display: grid;
+    grid-area: enter-2;
+    
+}

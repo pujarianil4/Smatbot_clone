@@ -257,10 +257,110 @@ display:none ;
     width: 18%;
     margin: 20px;
     margin: auto;
-    border: 1px solid red;
+  
     height: 150px;
     padding: 20px;
+
+}
+#usercase > div{
     
+    width: 80%;
+    margin: auto;
+}
+#usercase > div > h1{
+    font-size: 30px;
+    text-align: center;
+}
+#usercase > div > p{
+    color: rgb(99, 99, 99);
+    text-align: center;
+}
+.usecase-grid{
+    display: grid;
+    gap: 50px 100px;
+   
+    grid-template-columns: 42% 42%;
+    grid-template-rows: 450px 450px 450px 450px 450px 450px 450px 450px;
+   
+}
+.usecase-grid > div{
+ 
+    margin-left: 10px;
+}
+.line{
+    width: 50px;
+    height: 2px;
+    background-color: rebeccapurple;
+}
+.top-padding{
+    padding-top: 100px;
+}
+.divider1{
+    height: 100px;
+}
+.top-padding > p{
+    color: rgb(99, 99, 99);
+}
+.top-padding > h1{
+    font-weight: 200;
+    font-size: 40px;
+}
+.integration > div{
+    text-align: center;
+    margin: auto;
+    width: 53%;
+}
+.integration > div >p{
+    color: rgb(99, 99, 99);
+    font-family: sans-serif;
+}
+.integration > div > p >a{
+    color:rgb(40, 180, 235);
+}
+.integration > div >p >a:hover{
+    color: cyan;
+}
+.smartagent{
+    text-align: center;
+
+}
+.smartagent > h1{
+ letter-spacing: 2px;
+}
+.smartagent > p{
+    color:gray;
+}
+.knowmore{
+    width: 200px;
+    margin: auto;
+}
+.blog{
+    text-align: center;
+}
+.blog > h1{
+    font-size: 35px;
+    letter-spacing: 1px;
+}
+.gray{
+    color: gray;
+}
+.blog-post{
+    display: flex;
+    width: 80%;
+    margin: auto;
+   
+}
+.blog-post > div{
+    width: 30%;
+    margin: 20px;
+    height: 350px;
+  
+    text-decoration: none;
+}
+.blog-post > div > h2{
+    font-weight: 100;
+    font-size: 20px;
+    text-decoration: none;
 }
 @media(max-width:1140px){
     .nav-btn{
