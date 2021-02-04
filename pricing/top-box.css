@@ -230,7 +230,7 @@ display:none ;
 #background{
     background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     border: 1px solid orangered;
-    margin-top: 50px;
+    margin-top: 80px;
     width:100%;
     height:300px;
 }
