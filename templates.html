@@ -1,277 +1,326 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SmatBot | AI chatbox for all your business need</title>
 
-<link rel="stylesheet" href="css/style.css">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
-<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmatBot | AI chatbox for all your business need</title>
 
-        <style type="text/css">
-       body{
-    width: 100%;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-/* navbar */
-.content{
-padding:  0px 30px;
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
-} 
-.flex{
-    display: flex;
-}
-.navbar{
-    position: fixed;
-    z-index: 10;
-    width: 100%;
-    padding: 10px 0;
-    background-color: white;
-    top: 0;
-    
-}
-.navbar .content{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    height: 50px;
-    
-  
-}
-.navbar .menu-list{
-    list-style: none;
-}
-.navbar .menu-list{
-    display: inline-flex;
-  
-}
-.menu-list li a{
-    color: #000;
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 500;
-    margin-left: 30px;
-    transition: all 0.3s ease;
-    text-transform: uppercase;
-    font-family: 'Roboto Condensed', sans-serif;
-}
-.menu-list > li>a:hover{
- color: #8F5CF9;
-}
-.checkbtn{
-    font-size: 25px;
-    color: #000;
-    float: right;
-    margin-right: 30px;
-    
-}
-#check{
-    display: none;
+    <style type="text/css">
+        body {
+            width: 100%;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
 
-}
-.new-header {
-    position: absolute;;
-    top: 12px;
-    height: 25px;
-}
-.menu-list > li:nth-child(11),.menu-list > li:nth-child(12){
-    display: none;
-  
-}
 
-.nav-btn{
-    display: flex;
-    height: 40px;
-    margin-top: 20px;
-    margin-left:30px;
-    margin-bottom: 20px;
-  
-}
-.nav-btn > button{
- width: 150px;
- text-transform: uppercase;
- font-size: 12px;
- margin-left: 20px;
- background-color: white;
- border: 2px solid #8252FA;
- border-radius: 8px;
- font-weight: 700;
- font-family: 'Roboto Condensed', sans-serif;
- letter-spacing: 2px;
- 
-}
-.nav-btn > button:nth-child(1){
-    background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
-    color: white;
-    border: none;
-}
-.nav-btn > button:nth-child(1):hover{
-    background: white;
-    color: black;
-    border: 2px solid #8252FA;
-}
-.medi-screen{
-display:none ;
-}
+        /* navbar */
+        .content {
+            padding: 0px 30px;
 
-/* navbar end */
+        }
+
+        .flex {
+            display: flex;
+        }
+
+        .navbar {
+            position: fixed;
+            z-index: 10;
+            width: 100%;
+            padding: 10px 0;
+            background-color: white;
+            top: 0;
+
+        }
+
+        .navbar .content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            height: 50px;
+
+
+        }
+
+        .navbar .menu-list {
+            list-style: none;
+        }
+
+        .navbar .menu-list {
+            display: inline-flex;
+
+        }
+
+        .menu-list li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 15px;
+            font-weight: 500;
+            margin-left: 30px;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            font-family: 'Roboto Condensed', sans-serif;
+        }
+
+        .menu-list>li>a:hover {
+            color: #8F5CF9;
+        }
+
+        .checkbtn {
+            font-size: 25px;
+            color: #000;
+            float: right;
+            margin-right: 30px;
+
+        }
+
+        #check {
+            display: none;
+
+        }
+
+        .new-header {
+            position: absolute;
+            ;
+            top: 12px;
+            height: 25px;
+        }
+
+        .menu-list>li:nth-child(11),
+        .menu-list>li:nth-child(12) {
+            display: none;
+
+        }
+
+        .nav-btn {
+            display: flex;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 30px;
+            margin-bottom: 20px;
+
+        }
+
+        .nav-btn>button {
+            width: 150px;
+            text-transform: uppercase;
+            font-size: 12px;
+            margin-left: 20px;
+            background-color: white;
+            border: 2px solid #8252FA;
+            border-radius: 8px;
+            font-weight: 700;
+            font-family: 'Roboto Condensed', sans-serif;
+            letter-spacing: 2px;
+
+        }
+
+        .nav-btn>button:nth-child(1) {
+            background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
+            color: white;
+            border: none;
+        }
+
+        .nav-btn>button:nth-child(1):hover {
+            background: white;
+            color: black;
+            border: 2px solid #8252FA;
+        }
+
+        .medi-screen {
+            display: none;
+        }
+
+        /* navbar end */
         h1 {
             font-weight: 600;
         }
+
         h3 {
             text-align: center;
         }
-        body > div {
+
+        body>div {
             max-width: 900px;
             margin: auto;
         }
-        #campus-cont > div {
+
+        #campus-cont>div {
             width: 30%;
             height: 280px;
             margin: 1%;
             float: left;
         }
-        #campus-cont > div > div {
+
+        #campus-cont>div>div {
             border: 1px solid white;
             background-color: white;
         }
+
         #campus-cont img {
             max-width: 100%;
         }
-        @media(max-width:1140px){
-    .nav-btn{
-        flex-direction: column;
-        height: 10px;
-    }
-    .center{
-        display: block;
-    }
-    #free-trial {
-        height: 40px;
-    }
-}
-@media (max-width:960px){
-   
-    .navbar {
-        position: static;
-    }
-    .large-screen{
-        display: none;
-    }
-    .medi-screen{
-        display: contents;
-    }
-    #free-trial {
-        height: 40px;
-    }
-    .client-logo{
-        display: grid;
-        margin-left: 30px;
-        gap: 28px;
-        grid-template-columns: 22% 22% 22% 22%;
-        grid-template-rows: 100px 100px 100px;
-        margin-top: 50px;
-    }
-  
-}
-@media (max-width: 600px){
-    /* navbar */
 
- 
-    .navbar .menu-list{
-       position: absolute;     
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 80%;
-        max-width: 400px;
-        background: #222;
-        display: block;
-        padding: 40px 0;
-        text-align: center;
-        color: white;
-        display: none;
-       
-    }
-    .nav-btn{
-        display: none;
-    }
-    .new-header {
-        display: none;
-    }
+        @media(max-width:1140px) {
+            .nav-btn {
+                flex-direction: column;
+                height: 10px;
+            }
 
-    .navbar .menu-list>li{
-        margin-top: 25px;
+            .center {
+                display: block;
+            }
 
-    }
-    .navbar .menu-list > li >a{
-        font-size: 23px;
-        color: white;
-    }
-    .navbar .menu-list > li > a:hover{
-        color: cyan;
-    }
-    .checkbtn{
-      display: block;
-    }
-    #check:checked ~ .menu-list{
-        display: block;
-    }
-    .menu-list > li:nth-child(11),.menu-list > li:nth-child(12){
-        display: block;
-        background-color: blueviolet;
-      
-    }
-    /* header page */
-    #tag-line{
-        margin-top: 50px;
-    }
-    /* client */
-    .total-client{
-        flex-direction: column;
-      
-    }
-    .center{
-        display: block;
-        margin-top: 20px;
-        
-    }
-   
-    #free-trial {
-        height: 40px;
-    }
-    .divider{
-        height: 20px;
-        display: none
-    }
-    .total-client > div{
-      padding-left: 170px;
-       
-        width: 300px;
-    }
-    .client-logo{
-        display: grid;
-        margin-left: 50px;
-        gap: 28px;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-        margin-top: 50px;
-    }
-   
-}
-        </style>
-    </head>
-    <body>
-      <!-- navigation bar -->
-      <nav class="navbar">
+            #free-trial {
+                height: 40px;
+            }
+        }
+
+        @media (max-width:960px) {
+
+            .navbar {
+                position: static;
+            }
+
+            .large-screen {
+                display: none;
+            }
+
+            .medi-screen {
+                display: contents;
+            }
+
+            #free-trial {
+                height: 40px;
+            }
+
+            .client-logo {
+                display: grid;
+                margin-left: 30px;
+                gap: 28px;
+                grid-template-columns: 22% 22% 22% 22%;
+                grid-template-rows: 100px 100px 100px;
+                margin-top: 50px;
+            }
+
+        }
+
+        @media (max-width: 600px) {
+            /* navbar */
+
+
+            .navbar .menu-list {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 80%;
+                max-width: 400px;
+                background: #222;
+                display: block;
+                padding: 40px 0;
+                text-align: center;
+                color: white;
+                display: none;
+
+            }
+
+            .nav-btn {
+                display: none;
+            }
+
+            .new-header {
+                display: none;
+            }
+
+            .navbar .menu-list>li {
+                margin-top: 25px;
+
+            }
+
+            .navbar .menu-list>li>a {
+                font-size: 23px;
+                color: white;
+            }
+
+            .navbar .menu-list>li>a:hover {
+                color: cyan;
+            }
+
+            .checkbtn {
+                display: block;
+            }
+
+            #check:checked~.menu-list {
+                display: block;
+            }
+
+            .menu-list>li:nth-child(11),
+            .menu-list>li:nth-child(12) {
+                display: block;
+                background-color: blueviolet;
+
+            }
+
+            /* header page */
+            #tag-line {
+                margin-top: 50px;
+            }
+
+            /* client */
+            .total-client {
+                flex-direction: column;
+
+            }
+
+            .center {
+                display: block;
+                margin-top: 20px;
+
+            }
+
+            #free-trial {
+                height: 40px;
+            }
+
+            .divider {
+                height: 20px;
+                display: none
+            }
+
+            .total-client>div {
+                padding-left: 170px;
+
+                width: 300px;
+            }
+
+            .client-logo {
+                display: grid;
+                margin-left: 50px;
+                gap: 28px;
+                grid-template-columns: 45% 45%;
+                grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
+                margin-top: 50px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <!-- navigation bar -->
+    <nav class="navbar">
         <div class="content">
             <div class="logo"><a href="#">
                     <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png"
@@ -316,277 +365,360 @@ display:none ;
     <!-- navbar end -->
 
     <div id="campus-cont">
-     <div>
-      <div>  
-         <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/survey_bot.jpg"> <h3>Survey Bot</h3>
-       </div>
-                 </div>
-                 <div>
-                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/feedback_bot.jpg"> <h3>Feedback Bot</h3>
-                     </div>
-                 </div>
-                 <div>
-                     <div>
-                        <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/industry_images/appointment_booking.jpg"><h3>Appointment Booking</h3>
-                     </div>
-                 </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/survey_bot.jpg">
+                <h3>Survey Bot</h3>
+            </div>
         </div>
-
-                 <div id="campus-cont">
-                 <div>
-                     <div>
-                        <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/industry_images/ordering_bot.jpg"> <h3>Ordering Bot</h3>
-                     </div>
-                 </div>
-                 <div>
-                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/coaching_institute.jpg"><h3>Coaching Institute</h3>
-                     </div>
-                 </div>
-                 <div>
-                     <div>
-                        <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/overseas_education.jpeg"> <h3>Overseas Education Consultancy</h3>
-                     </div>
-                 </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/feedback_bot.jpg">
+                <h3>Feedback Bot</h3>
+            </div>
         </div>
-
-            <div id="campus-cont">
-          <div>
-     <div>
-       <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/combat_school.jpg"><h3>Combat School</h3>
+        <div>
+            <div>
+                <img
+                    src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/industry_images/appointment_booking.jpg">
+                <h3>Appointment Booking</h3>
+            </div>
+        </div>
     </div>
-   </div>
-   <div>
-   <div>
-        <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/playschool.jpg"><h3>Playschool</h3>
-      </div>
-   </div>
-   <div>
-       <div>
-         <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hospital_booking.jpg"> <h3>Hospital Apointment Booking</h3>
-      </div>
-   </div>
-   </div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/doctor_feedback.jpg"><h3>Doctors Feedback</h3>
+            <div>
+                <img
+                    src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/industry_images/ordering_bot.jpg">
+                <h3>Ordering Bot</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/coaching_institute.jpg">
+                <h3>Coaching Institute</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/overseas_education.jpeg">
+                <h3>Overseas Education Consultancy</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/vehicle_rental.jpg"><h3>Vehicle Rental</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/equipment_rental.jpg"><h3>Equipment Rental</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/home_rental.jpg"><h3>Home Rental</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/combat_school.jpg">
+                <h3>Combat School</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/playschool.jpg">
+                <h3>Playschool</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hospital_booking.jpg">
+                <h3>Hospital Apointment Booking</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/car_hire.jpg"><h3>Car Hire</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/bike_rental.jpeg"><h3>Bike Rental</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/visa_conultancy.jpg"><h3>Visa Consultancy</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/doctor_feedback.jpg">
+                <h3>Doctors Feedback</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/vehicle_rental.jpg">
+                <h3>Vehicle Rental</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/equipment_rental.jpg">
+                <h3>Equipment Rental</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/travel_package_booking.jpg"><h3>Travel Agency</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/forex.jpg"><h3>Forex</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/plot_for_sale.jpg"><h3>Plot For Sale</h3>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/home_rental.jpg">
+                <h3>Home Rental</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/car_hire.jpg">
+                <h3>Car Hire</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/bike_rental.jpeg">
+                <h3>Bike Rental</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/flat_for_sale.jpg"><h3>Flat For Sale</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/home_rental_other.jpg"><h3>Home Rental</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/property_deals.jpg"><h3>Property Deals</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/visa_conultancy.jpg">
+                <h3>Visa Consultancy</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/travel_package_booking.jpg">
+                <h3>Travel Agency</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/forex.jpg">
+                <h3>Forex</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hr_consultancy.jpg"> <h3>HR Consultancy</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/ecommerce_shopping.jpg"><h3>E-Commerce Shopping</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/beauty_products.jpeg"><h3>Beauty Products</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/plot_for_sale.jpg">
+                <h3>Plot For Sale</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/flat_for_sale.jpg">
+                <h3>Flat For Sale</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/home_rental_other.jpg">
+                <h3>Home Rental</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/phone_purchasing.jpg"><h3>Beauty Products</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/fund_investments.jpg"><h3>Mutual Funds Investments</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/smatbot_loans.jpg"><h3>SmatBot Loans</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/property_deals.jpg">
+                <h3>Property Deals</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hr_consultancy.jpg">
+                <h3>HR Consultancy</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/ecommerce_shopping.jpg">
+                <h3>E-Commerce Shopping</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/start_up_funding.jpg"> <h3>Start-Up Funding</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/diet_consultant.jpg"><h3>Diet Consultant</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/gym_enquiry.jpg"><h3>Gym Enquiry</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/beauty_products.jpeg">
+                <h3>Beauty Products</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/phone_purchasing.jpg">
+                <h3>Beauty Products</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/fund_investments.jpg">
+                <h3>Mutual Funds Investments</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/personal_trainer.jpg"><h3>Personal Trainer</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/digital_agency.jpg"><h3>Digital Marketing Agency</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://image.freepik.com/free-photo/people-with-a-megaphone-and-social-media-marketing-icons_53876-65646.jpg"><h3>Advertisement Agency</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/smatbot_loans.jpg">
+                <h3>SmatBot Loans</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/start_up_funding.jpg">
+                <h3>Start-Up Funding</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/diet_consultant.jpg">
+                <h3>Diet Consultant</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/franchise.jpg"> <h3>Franchies</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/music_concert.jpeg"><h3>Music Concert Booking</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hotel_booking.jpg"><h3>Hotel Booking</h3>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/gym_enquiry.jpg">
+                <h3>Gym Enquiry</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/personal_trainer.jpg">
+                <h3>Personal Trainer</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/digital_agency.jpg">
+                <h3>Digital Marketing Agency</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hotel_service.jpg"><h3>Hotel Service</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/table_booking.jpg"><h3>Restaurant Table Booking</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/saas.jpg"><h3>SaaS Enquiry</h3>
+            <div>
+                <img
+                    src="https://image.freepik.com/free-photo/people-with-a-megaphone-and-social-media-marketing-icons_53876-65646.jpg">
+                <h3>Advertisement Agency</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/franchise.jpg">
+                <h3>Franchies</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/music_concert.jpeg">
+                <h3>Music Concert Booking</h3>
+            </div>
         </div>
     </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/web_development.jpg"><h3>Web Development</h3>
-        </div>
-    </div>
-    <div>
-        <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/pet_care.jpg"><h3>Pet Care</h3>
-        </div>
-    </div>
-</div>
 
     <div id="campus-cont">
-    <div>
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/pest_solutions.jpg"><h3>Poet Solution</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hotel_booking.jpg">
+                <h3>Hotel Booking</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/hotel_service.jpg">
+                <h3>Hotel Service</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/table_booking.jpg">
+                <h3>Restaurant Table Booking</h3>
+            </div>
         </div>
     </div>
-    <div>
+
+    <div id="campus-cont">
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/bike_repair.jpg"><h3>Bike Repair</h3>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/saas.jpg">
+                <h3>SaaS Enquiry</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/web_development.jpg">
+                <h3>Web Development</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/pet_care.jpg">
+                <h3>Pet Care</h3>
+            </div>
         </div>
     </div>
-    <div>
+
+    <div id="campus-cont">
         <div>
-           <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/cooking_course.jpg"><h3>Cooking Course</h3>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/pest_solutions.jpg">
+                <h3>Poet Solution</h3>
+            </div>
         </div>
-    </div>
-    <div>
         <div>
-        <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/medical_taxi.jpg"> <h3>Medical Taxi</h3>
-     </div>
-</div>
-    </body>
+            <div>
+                <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/bike_repair.jpg">
+                <h3>Bike Repair</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/cooking_course.jpg">
+                <h3>Cooking Course</h3>
+            </div>
+        </div>
+        <div>
+            <div>
+                <img
+                    src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/industry_images/medical_taxi.jpg">
+                <h3>Medical Taxi</h3>
+            </div>
+        </div>
+</body>
+
 </html>
