@@ -179,6 +179,21 @@ display:none ;
  margin-left: 10px;
  border: 1px solid white;
 }
+.q{
+    padding-top: 20px;
+}
+
+/* didider */
+.skewed {
+    position: absolute;
+   
+    width: 100%;
+    height: 120px;
+    background: white;
+    z-index: 0;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+  }
 /* front page end */
 /* our client */
 .total-client{
@@ -420,7 +435,7 @@ display:none ;
     font-size: 16px;
   }
   .smatagent-image img {
-    width:50%;
+    width:95%;
     height:400px;
     margin: 40px 25% 40px 25%;
   }
@@ -467,13 +482,13 @@ display:none ;
 }
 
 .inq-section{
-    height: 500px;
+    height: 300px;
     background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
 }
 .inq-section > h1{
     color: white;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 .inq-section > div{
     margin: auto;
@@ -711,11 +726,7 @@ display:none ;
         height: 20px;
         display: none
     }
-    .total-client > div{
-      padding-left: 170px;
-       
-        width: 300px;
-    }
+  
     .client-logo{
         display: grid;
         margin-left: 50px;
@@ -724,5 +735,47 @@ display:none ;
         grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
         margin-top: 50px;
     }
-   
+    .avail{
+        flex-direction: column;
+    }
+    .omniflex{
+        flex-direction: column;
+    }
+    .total-client{
+        width: 400px;
+    }
+    .usecase-grid{
+        display: grid;
+        gap: 50px 100px;
+       
+        grid-template-columns: 95%;
+        grid-template-rows: 200px;
+    }
+
+    #head-img{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+   #gridfooter{
+       margin-left: 0px;
+     
+       width: 95%;
+       grid-template-columns: 17% 17% 17% 17% 17%;
+   }
+   #gridfooter > div > div {
+       font-size: 15px;
+   }
+  
+   #clickableImage{
+       display: none;
+   }
+ 
+   #int-img,#smat-img > img {
+       width: 80%;
+      
+       margin-left: 0px;
+   }
+
 }
