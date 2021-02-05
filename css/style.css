@@ -179,6 +179,9 @@ display:none ;
  margin-left: 10px;
  border: 1px solid white;
 }
+.video-img{
+    display: none;
+}
 .q{
     padding-top: 20px;
 }
@@ -825,6 +828,9 @@ display:none ;
     box-shadow: 2 5 8 10px #E58C5E, 0 0 0 40px #E94882;
     border: 1px solid #45237a;
 } 
+.video-img{
+    display: none;
+}
 
 .video:before, 
 .video:after { 
@@ -871,6 +877,12 @@ display:none ;
     #free-trial {
         height: 40px;
     }
+    .pulse,.video{
+        display: none;
+    }
+    .video-img{
+        display: block;
+    }
 }
 @media (max-width:960px){
    
@@ -893,6 +905,12 @@ display:none ;
         grid-template-columns: 22% 22% 22% 22%;
         grid-template-rows: 100px 100px 100px;
         margin-top: 50px;
+    }
+    .pulse,.video{
+        display: none;
+    }
+    .video-img{
+        display: block;
     }
   
 }
@@ -1028,5 +1046,11 @@ display:none ;
    #test-head{
        display: none;
    }
+   .pulse,.video{
+    display: none;
+}
+.video-img{
+    display: block;
+}
 
 }
