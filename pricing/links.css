@@ -102,3 +102,107 @@ a{
     
 }
 
+#links{
+    display: grid;
+    grid-template:"pro com res leg cont";
+}
+@media only screen and (max-width:900px)
+{
+    #links{
+        margin-left:-10px;
+        grid-template:"pro com"
+     
+        "res leg"
+        "cont";
+    }
+}
+@media only screen and (max-width:600px)
+{
+    #links{
+        margin-left:-10px;
+        grid-template:
+        "pro"
+        "com"
+        "res"
+        "leg"
+        "cont";
+    }
+}
+#product{
+    height: 400px;
+    width: 200px;
+    /* border: 1px solid red; */
+    margin-left: 30px;
+    margin-top: 20px;
+  
+    grid-area: pro;
+    
+}
+#product >div{
+    margin-top: 10px;
+}
+div>h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#company{
+    height: 400px;
+    width: 150px;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    margin-top: 20px;
+    
+    grid-area: com;
+    
+}
+#company >div{
+    margin-top: 10px;
+}
+#resources{
+    height: 400px;
+    width: 150px;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    margin-top: 20px;
+   
+    grid-area: res;
+    
+}
+#resources >div{
+    margin-top: 10px;
+}
+#legal{
+    height: 400px;
+    width: 150px;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    margin-top: 20px;
+    
+    grid-area: leg;
+    
+}
+#legal>div{
+    margin-top: 10px;
+}
+#contact{
+    height: 400px;
+    width: 200px;
+    /* border: 1px solid red; */
+    margin-left: 5px;
+    margin-top: 20px;
+   
+    grid-area: cont;
+    
+}
+#contact>div{
+    margin-top: 10px;
+}
+a{
+    margin-left:5px;
+    margin-top: 20px;
+    color: black;
+    
+}
+
+
