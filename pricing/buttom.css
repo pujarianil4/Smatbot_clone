@@ -1,0 +1,20 @@
+
+details > summary {
+    padding: 4px;
+    width: 800px;
+    background-color: #eeeeee;
+    border: none;
+    margin: auto;
+    box-shadow: 1px 1px 2px #bbbbbb;
+    cursor: pointer;
+  }
+  
+  details > p {
+    background-color: #eeeeee;
+    padding: 4px;
+    margin: 10px;
+    box-shadow: 1px 1px 2px #bbbbbb;
+  }
+  #questions>div{
+    margin-top: 20px;
+  }
