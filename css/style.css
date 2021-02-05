@@ -201,7 +201,7 @@ display:none ;
 /* our client */
 .total-client{
     display: flex;
-    width: 700px;
+    width: 800px;
 
     margin: auto;
     box-shadow: 2px 2px 5px gray;
