@@ -777,5 +777,8 @@ display:none ;
       
        margin-left: 0px;
    }
+   .skewed-hide{
+       display: none;
+   }
 
 }
