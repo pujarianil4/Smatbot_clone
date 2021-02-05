@@ -17,4 +17,5 @@ Sources:
 3. Akshay Choudhry-**Template**
 
 4. Dinkar Kumar- **Partners**
- 
+
+### smatbot is the company that developed Artificial intelligence software for other companies, AI helps to communicate and support users without any human being. AI will give you answers which you asked.Smatbot website is very well structured and beautiful as a user but if we think like a developer it's very challenging to make.
