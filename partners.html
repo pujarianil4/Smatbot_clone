@@ -91,13 +91,13 @@
      }
 
      #nam1 {
-         background-color:wheat;
+         background-color:white;
          height: 300px;
          width: 450px;
          margin: 20px;
      }
      #nam2 {
-         background-color: wheat;
+         background-color:white;
          height: 300px;
          width: 450px;
          margin: 20px;
@@ -105,11 +105,11 @@
      #submit {
         background-color:white;
          text-align: center;
+         margin:200px;
      }
      #endingpart {
          display: flex;
          background-color: white;
-        
          margin: 150px;
          text-align: center;
 
@@ -207,28 +207,45 @@
       background-color: blueviolet;
       padding: 5px;
       height: 100px;
-      width: 200px;
+      margin: 10px;
       text-align: center;
      }
      .pro1:hover{
          top: 0;
          color: red;
      }
-     #login {
-         background-color:blue;
-         height: 700px;
-         width: auto;
-
+    
+         
+     
+     form {
+     width: 500px;
+     height: 300px;
+     padding: 20px;
+     margin: auto;
+     background:white;
+     font-size: 20px;
+     }
+     input {
+         width: 80%;
+         padding: 5px;
+         font-size: 15px;
+         height: 30px;
          
      }
-     #login1 {
-        background-color: turquoise;
-         height: 500px;
-         width: 500px;
-         margin: 400px;
+     select {
+         width: 83%;
+         height: 30px;
+         padding: 5px;
+         font-size: 15px;
          
      }
-
+     button {
+         background: white;
+         width: 80%;
+         padding: 5px;
+         font-size: 15px;
+         }
+    
     </style>
 
 </head>
@@ -400,24 +417,6 @@
     </div>
 
    
-    <div id="login">
-        <div id="login1">
-
-            <form>
-            <label for="text"></label>
-            <input type="text" id="text" placeholder="Your Business Email">
-            <label for="text"></label><br><br>
-            <input type="password" id="text" placeholder="Password"><br><br>
-
-            <button type="submit" onclick="sign">Sign In</button> <br><br>
-
-            <a href="forgot password">Forgot Password ?</a>
-            <p>Don't have an account ?
-                <a href="sign up">Sign Up</a>
-            </p>
-         </form>
-        </div>
-    </div>
-
+    
 </body>
 </html>
