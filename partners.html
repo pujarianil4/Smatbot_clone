@@ -13,10 +13,10 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="https://kit.fontawesome.com/249783f98b.js" crossorigin="anonymous"></script>
     <title>project smatbot</title>
     <style type="text/css">
-
-body{
+    body{
     width: 100%;
     font-family: 'Roboto Condensed', sans-serif;
 }
@@ -70,7 +70,7 @@ padding:  0px 30px;
     color: #000;
     float: right;
     margin-right: 30px;
-    
+    display: none;
 }
 #check{
     display: none;
@@ -121,9 +121,6 @@ padding:  0px 30px;
 display:none ;
 }
 
-/* navbar end */
-
-
      #smat {
          color: grey;
          font-size: small;
@@ -147,7 +144,7 @@ display:none ;
      
      
      #referer {
-         background-color:whitesmoke;
+         background-color:white;
          height: 500px;
          width: 330px;
          margin: 20px;
@@ -157,15 +154,15 @@ display:none ;
 
      }
      #agency {
-         background-color:whitesmoke;
+         background-color:white;
          height: 500px;
-         width: 330px;
+         width: 350px;
          margin: 20px;
          text-align: center;
          border-radius: 5px;
      }
      #reseller {
-         background-color: whitesmoke;
+         background-color: white;
          height: 500px;
          width: 330px;
          margin: 20px;
@@ -184,10 +181,11 @@ display:none ;
          color:grey;
          text-align: left;
      }
-     #invite {
+     .invite {
          
-         
+         font-size: x-large;
          margin-top: 50px;
+         height: 50px;
      }
      #started {
          
@@ -204,17 +202,18 @@ display:none ;
      }
      #name {
          display: flex;
-         background-color: wheat;
+         background-color: white;
          margin: 150px;
      }
+
      #nam1 {
-         background-color: cyan;
+         background-color:wheat;
          height: 300px;
          width: 450px;
          margin: 20px;
      }
      #nam2 {
-         background-color: darkgray;
+         background-color: wheat;
          height: 300px;
          width: 450px;
          margin: 20px;
@@ -267,142 +266,94 @@ display:none ;
          margin: 20px;
          text-align: left;
      }
-     #social {
-         display: flex;
-         background-color: antiquewhite;
+     .ref {
+         background-color:white;
+         padding: 5px;
+         border-radius: 5px;
+     }
+     .ref:hover{
+         top: 0;
+        background-color:blueviolet;
+     }
+     .age {
+         background-color:white;
+         padding: 5px;
+         border-radius: 5px;
 
      }
+     .age:hover {
+         top: 0;
+         background-color: blueviolet;
+     }
+     .res {
+         background-color: white;
+         padding: 5px;
+         border-radius: 5px;
+     }
+     .res:hover {
+         top: 0;
+         background-color: blueviolet;
+     }
+     .start:hover {
+         top: 0;
+         background-color: blueviolet;
+         padding: 5px;
+         height: 80px;
+         width: 300px;
+         border-radius: 5px;
+     }
+     .invi:hover {
+         top: 0;
+         background-color: blueviolet;
+         padding: 5px;
+         height: 80px;
+         width: 300px;
+         border-radius: 5px;
+     }
+     .pro:hover {
+         top: 0;
+         background-color: blueviolet;
+         padding: 5px;
+         height: 80px;
+         width: 300px;
+         border-radius: 5px;
+     }
+     .sub:hover {
+      top: 0 ;
+      background-color: blueviolet;
+      padding: 5px;
+      height: 100px;
+      width: 200px;
+      text-align: center;
+     }
+     .pro1:hover{
+         top: 0;
+         color: red;
+     }
+     #login {
+         background-color:blue;
+         height: 700px;
+         width: auto;
 
-     @media(max-width:1140px){
-    .nav-btn{
-        flex-direction: column;
-        height: 10px;
-    }
-    .center{
-        display: block;
-    }
-    #free-trial {
-        height: 40px;
-    }
-}
-@media (max-width:960px){
-   
-    .navbar {
-        position: static;
-    }
-    .large-screen{
-        display: none;
-    }
-    .medi-screen{
-        display: contents;
-    }
-    #free-trial {
-        height: 40px;
-    }
-    .client-logo{
-        display: grid;
-        margin-left: 30px;
-        gap: 28px;
-        grid-template-columns: 22% 22% 22% 22%;
-        grid-template-rows: 100px 100px 100px;
-        margin-top: 50px;
-    }
-  
-}
-@media (max-width: 600px){
-    /* navbar */
+         
+     }
+     #login1 {
+        background-color: turquoise;
+         height: 500px;
+         width: 500px;
+         margin: 400px;
+         
+     }
 
- 
-    .navbar .menu-list{
-       position: absolute;     
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 80%;
-        max-width: 400px;
-        background: #222;
-        display: block;
-        padding: 40px 0;
-        text-align: center;
-        color: white;
-        display: none;
-       
-    }
-    .nav-btn{
-        display: none;
-    }
-    .new-header {
-        display: none;
-    }
-
-    .navbar .menu-list>li{
-        margin-top: 25px;
-
-    }
-    .navbar .menu-list > li >a{
-        font-size: 23px;
-        color: white;
-    }
-    .navbar .menu-list > li > a:hover{
-        color: cyan;
-    }
-    .checkbtn{
-      display: block;
-    }
-    #check:checked ~ .menu-list{
-        display: block;
-    }
-    .menu-list > li:nth-child(11),.menu-list > li:nth-child(12){
-        display: block;
-        background-color: blueviolet;
-      
-    }
-    /* header page */
-    #tag-line{
-        margin-top: 50px;
-    }
-    /* client */
-    .total-client{
-        flex-direction: column;
-      
-    }
-    .center{
-        display: block;
-        margin-top: 20px;
-        
-    }
-   
-    #free-trial {
-        height: 40px;
-    }
-    .divider{
-        height: 20px;
-        display: none
-    }
-    .total-client > div{
-      padding-left: 170px;
-       
-        width: 300px;
-    }
-    .client-logo{
-        display: grid;
-        margin-left: 50px;
-        gap: 28px;
-        grid-template-columns: 45% 45%;
-        grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
-        margin-top: 50px;
-    }
-   
-}
     </style>
 
 </head>
 <body>
 
-      <!-- navigation bar -->
-      <nav class="navbar">
+     <!-- navigation bar -->
+     <nav class="navbar">
         <div class="content">
-            <div class="logo"><a href="#">
+            <div class="logo"><a href="index.html">
                     <img src="https://s3.ap-south-1.amazonaws.com/custpostimages/sb_images/SB_logo_horizontal_text_compressed.png"
                         alt="logo" width="180px" />
                 </a></div>
@@ -416,11 +367,11 @@ display:none ;
                 </label>
                 <li><a href="#"></a></li>
                 <li><a href="index.html">HOME</a></li>
-                <li><a href="#">Whatsapp</a>
+                <li><a href="">Whatsapp</a>
                     <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/sb_images/new_in_header.png"
                         class="new-header"></td>
                 </li>
-                <li><a href="index.html#usercase">usercase</a></li>
+                <li><a href="index.html#usecase">usercase</a></li>
                 <li><a href="templates.html">Templates</a></li>
                 <li><a href="pricing.html">Pricing</a></li>
                 <li><a href="index.html#blog">BLOG</a></li>
@@ -432,7 +383,7 @@ display:none ;
             </ul>
 
             <div class="nav-btn large-screen">
-                <button>Free Trial</button>
+               <button>Free Trial</button>
                 <button>Request demo</button>
             </div>
 
@@ -450,10 +401,10 @@ display:none ;
     <div id="layout1">
 
         <div id="referer">
-            <div>
+            <div class="ref">
             <h3>Referer</h3>
             <p>(Referer/consultant/influncer)</p>
-        </div>
+             </div>
             <div>
              <h3>Lifetime Recurring Commission On All Sales.</h3>
             </div>
@@ -473,14 +424,18 @@ display:none ;
             </ul>
            </div>
            
-           <div id="invite">
-               <BUtton onclick="GET">GET INVITED</BUtton>
-           </div>
+           <div class="invite">
+               <div class="invi">
+              <a href="GET INVITED"> <BUtton type="button" onclick="GET">GET INVITED</BUtton></a>
+               </div>
+            </div>
         </div>
            
         <div id="agency">
+            <div class="age">
             <h3>Agency</h3>
             <p>(Digital Marketing/Web Development Agencies) </p>
+            </div>
             <div>
                 <h3>An Agency Partnership Programme Like Never Before.</h3>
             </div>
@@ -505,12 +460,16 @@ display:none ;
                 </ul>
             </div>
             <div id="started">
-                <button onclick="Get">GET STARTED</button>
+                <div class="start">
+               <a href="GET STARTED"> <button onclick="Get">GET STARTED</button></a>
+                </div>
             </div>
         </div>
         <div id="reseller">
+            <div class="res">
             <h3>Reseller</h3>
             <p>(Resellers/Channel Partners)</p>
+            </div>
             <div>
                 <h3>Resell As If It Is Your Own.</h3>
             </div>
@@ -529,7 +488,9 @@ display:none ;
                 </ul>
             </div>
             <div id="proposal">
-                <button onclick="Get ">GET PROPOSAL</button>
+                <div class="pro">
+               <a href="GET PROPOSAL"><button onclick="Get ">GET PROPOSAL</button></a>
+                </div>
             </div>
         </div>
     </div>
@@ -538,76 +499,85 @@ display:none ;
     </div>
     <div id="name">
         <div id="nam1">
-            <form>
-                <label for="fname">NAME</label><br>
-                <input type="Name" id="fname" name="fname" ><br>
-                <label for="lname">Phone Number</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="fname">how did</label><br>
-                <input type="how did" id="fname" name="fname"><br>
-                <label for="fname">select </label><br>
-                <input type="select" id="fname" name="fname"><br>
-            </form>
+                     <form>
+                      <label for="fname"></label>
+                      <input type="text" id="fname"  placeholder="Name"><br><br>
+                        <select id="country" name="country">
+                        <option value="India">India</option>
+                        <option value="australia">Australia</option>
+                        <option value="canada">Canada</option>
+                        <option value="usa">USA</option>
+                        <label for="country"></label><br>
+                        <input type="text" id="country" name="firstname" placeholder="Phone Number"><br>
+                      </select> <br>
+
+                      <select name="you are" id="you are">
+                          <option value="How did you hear about us">How did you hear about us</option>
+                          <option value="word of mouth">word of mouth</option>
+                          <option value="Google">Google</option>
+                          <option value="Facebook">Facebook</option>
+                          <option value="Linkedin">Linkedin</option>
+                          <option value="Twitter">Twitter</option>
+                          <option value="Whatsapp">Whatsapp</option>
+                          <option value="Others"></option>
+                      </select><br><br>
+
+                      <select name="select1" id="select1">
+                        <option value="on-premise">on-premise</option>
+                        <option value="cloud">cloud</option>
+                        <option value="Others">Others</option>
+                      </select><br><br>
+                      </form>
         </div>
         <div id="nam2">
             <form>
-                <label for="fname">EMAIL</label><br>
-                <input type="Name" id="fname" name="fname" ><br>
-                <label for="lname">you are a</label><br>
-                <input type="text" id="lname" name="lname"><br>
-                <label for="fname">Message</label><br>
-                <input type="how did" id="fname" name="fname"><br>
-                <label for="fname">company </label><br>
-                <input type="select" id="fname" name="fname"><br>
+                <label for="fname"></label>
+                      <input type="text" id="fname"  placeholder="Email"><br><br>
+
+
+                      <select name="you are" id="you are">
+                          <option value="you are a">you are a</option>
+                          <option value="Referer">Referer</option>
+                          <option value="Agency">Agency</option>
+                          <option value="Reseller">Reseller</option>
+                          
+                      </select><br><br>
+                      <label for="fname"></label>
+                      <input type="text" id="fname"  placeholder="Message"><br><br>
+
+                      <label for="fname"></label>
+                      <input type="text" id="fname"  placeholder="company"><br><br>
+
+
+                     
+
             </form>
         </div>
     </div>
     <div id="submit">
-        <button onclick="submit">submit</button>
+        <div class="sub">
+       <a href="submit"> <button type="button" onclick="submit">submit</button></a>
+        </div>   
     </div>
 
-    <div id="endingpart">
-           <div id="product">
-               <h3>PRODUCT</h3>
-              <p> <a href ="whatsapp" >whatsAPP</a> </p> 
-              <p> <a href="on-premise solution">On-premise Solution</a> </p> 
-              <p> <a href="Arabic Chatbot">Arabic Chatbot</a> </p> 
-              <p> <a href="How it Works">How it Works</a> </p>
-              <p> <a href="Pricing">pricing</a> </p>
-              <p> <a href="signup">signup</a> </p>
-              <p> <a href="Login">Login</a> </p>
+   
+    <div id="login">
+        <div id="login1">
 
-           </div>
-           <div id="company">
-               <h3>COMPANY</h3>
-               <p> <a href="About Us">About Us</a></p>
-               <p> <a href="SmatSocial"> SmatSocial </a></p>
-               <p> <a href="Services">Services</a></p>
-               <p> <a href="Reviews">Reviews</a></p>
-               <p> <a href="Our Team">Our Team</a></p>
-               <p> <a href="Careers">Careers</a></p>
-           </div>
-           <div id="resources">
-               <h3>RESOURCES</h3>
-               <p> <a href="Contact Us">Contact Us</a></p>
-               <p> <a href="Help centre">Help Centre</a></p>
-               <p> <a href="Free Guide">Free Guide </a></p>
-               <p> <a href="Blog">Blog</a></p>
-               <p> <a href="Youtube Chhanel">Youtube Chhanel</a></p>
-           </div>
-           <div id="legal">
-               <h3>LEGAL</h3>
-               <p> <a href="Privacy Policy">Privacy Policy</a> </p>
-               <p> <a href="Terms & conditions">Terms & conditions</a></p>
-           </div>
-           <div id="contactus">
-               <h3>CONTACT US</h3>
-               <p> <a href="Feo SOcial Media Private limited"> Feo Social Media private limited </a></p>
-               <p> <a href="ground floor ,boss towers patrika nagar Hitec City,Hyderabad Telangana">  ground floor ,boss towers patrika nagar Hitec City,Hyderabad Telangana</a></p>
-               <P> <a href=" +914049520079"> +914049520079 </a></P>
-               <P> <a href=" +919205308991"> +919205308991 </a></P>
-               
-           </div>
+            <form>
+            <label for="text"></label>
+            <input type="text" id="text" placeholder="Your Business Email">
+            <label for="text"></label><br><br>
+            <input type="password" id="text" placeholder="Password"><br><br>
+
+            <button type="submit" onclick="sign">Sign In</button> <br><br>
+
+            <a href="forgot password">Forgot Password ?</a>
+            <p>Don't have an account ?
+                <a href="sign up">Sign Up</a>
+            </p>
+         </form>
+        </div>
     </div>
 
 </body>

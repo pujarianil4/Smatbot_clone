@@ -179,6 +179,21 @@ display:none ;
  margin-left: 10px;
  border: 1px solid white;
 }
+.q{
+    padding-top: 20px;
+}
+
+/* didider */
+.skewed {
+    position: absolute;
+   
+    width: 100%;
+    height: 120px;
+    background: white;
+    z-index: 0;
+    transform: skewY(-5deg);
+    transform-origin: top left;
+  }
 /* front page end */
 /* our client */
 .total-client{
@@ -336,10 +351,107 @@ display:none ;
 .smartagent > p{
     color:gray;
 }
+
+
 .knowmore{
     width: 200px;
     margin: auto;
 }
+/* feedback */
+#feedBack{
+   background-color: rgb(240, 240, 240);
+  
+  }
+  .review i {
+    color:#ffc000;
+    font-size: 12px;
+    margin-bottom: 10px;
+  }
+  .feedback-color {
+     color:#777;
+     font-size: 12px;
+     margin: 50px 0 0;
+     text-transform: none;
+     font-weight: 200;
+     font-family: 'Rubik', sans-serif;
+  }
+  
+  #feedBack a{
+    color: rgb(24, 140, 236);
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 600;
+  }
+  
+  .feedback-image{
+    height: 110px;
+    width: 110px;
+    margin: 40px auto 15px;
+  }
+  .feedback-image img {
+    border-radius: 100%;
+    height: 100%;
+  }
+  
+  #feedBack > .chatbot-head p{
+    font-size: 18px;
+    text-transform: capitalize;
+    font-family: 'Rubik', sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2px;
+  }
+  
+  #feedBack h4 {
+    margin: 10px 0 22px ;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    color:#777;
+    text-transform: capitalize;
+  }
+  
+.chatbot-head {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Rubik', sans-serif;
+    letter-spacing: 2px;
+     
+  }
+  
+  .chatbot-color {
+    color:#777;
+    font-size:14px;
+    margin-top: 200px;
+    margin-bottom:20px;
+  }
+  /* feedback */
+  #smatAgent{
+    min-width: 500px;
+    width: 80%;
+    margin: auto;
+     
+  }
+  
+  .smatagent-size {
+    font-size: 16px;
+  }
+  .smatagent-image img {
+    width:95%;
+    height:400px;
+    margin: 40px 25% 40px 25%;
+  }
+  .smatagent {
+    font-size:22px;
+  }
+  
+  #smatAgent .smatBtn{
+    width: 10%;
+    margin: 20px auto 0;
+  }
+  #smatAgent button{
+    text-align: center;
+  }
+
+
 .blog{
     text-align: center;
 }
@@ -370,18 +482,142 @@ display:none ;
 }
 
 .inq-section{
-    height: 500px;
+    height: 300px;
     background-image: linear-gradient(90deg, #8F5CF9 0%, #E19AF2 80%);
 }
 .inq-section > h1{
     color: white;
     text-align: center;
-    padding-top: 200px;
+    padding-top: 100px;
 }
 .inq-section > div{
     margin: auto;
     margin-top: 30px;
 }
+
+/* footer */
+#footer{
+    width: 100%;
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #FAFAFB;
+    margin-top: -20px;
+  }
+  
+  .grid{
+    display: grid;
+    margin: 1% auto 0;
+    width: 75%;
+    grid-template-columns: 20%;
+    justify-content: justify;
+    grid-template-areas: "a b c d e";                    
+    grid-gap: auto;  
+  }
+  
+  .grid > div{
+    width: 90%;
+    padding-left: 10%;
+    margin-left: 40px; 
+    max-width: 350px;
+  }
+  
+  #footer > .one{
+    grid-area: a;
+  }
+  #footer > .two{
+    grid-area: b;
+  }
+  #footer > .three{
+    grid-area: c;
+  }
+  #footer > .four{
+    grid-area: d;
+  }
+  #footer > .five{
+    grid-area: e;
+  }
+  .footLogo{
+    border-top: solid 1px rgb(211,211,211);
+    display: block;
+    width: 100%;
+    border: 1px #D3D3D3 solid;
+    text-align: center;
+   
+  }
+  .footLogo img{
+    height: 60px;
+    margin-top: 7px;
+  } 
+  #footer  .flex > div{
+    margin-top: 4px;
+    flex-basis: 22%;
+    text-align: left;
+    font-size: 18px;
+    color: #2196F3;
+   
+  }
+  
+  
+  
+  .footerHead{
+    font-size: 18px;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin: 20px 0;
+    padding-bottom: 10px;
+    
+  }
+  #footer a{
+    text-decoration: none;
+    color: #a2a1a1;
+    font-size: 16px;
+    display: block;
+    margin: 20px 0;
+    font-weight: normal; 
+  }
+  #footer i{
+    margin-right: 10px;
+    margin-top: 4px;
+  }
+  
+  #footer a:active, #footer a:hover{
+    text-decoration: none;
+    color: #2196F3;;
+  }
+  
+  .footerContent{
+     margin: 20px 0;
+  }
+  
+  #chatBot > img{
+    height: 55px;
+    width: 55px;
+    cursor: pointer;
+    position: fixed;
+    bottom: 1.6%;
+    right: 2%;
+    z-index: 100;
+    overflow: hidden;
+  } 
+  .chatBox{
+    position: fixed;
+    height: 500px;
+    width: 300px;
+    bottom: 10%;
+    right: 2%;
+    z-index: 101;
+    overflow: hidden;
+    border:black 1px solid;
+    background-color: white;
+    border-radius: 5px;
+    padding: 2%;
+  }
+
+  /* footer end */
 @media(max-width:1140px){
     .nav-btn{
         flex-direction: column;
@@ -490,11 +726,7 @@ display:none ;
         height: 20px;
         display: none
     }
-    .total-client > div{
-      padding-left: 170px;
-       
-        width: 300px;
-    }
+  
     .client-logo{
         display: grid;
         margin-left: 50px;
@@ -503,5 +735,47 @@ display:none ;
         grid-template-rows: 100px 100px 100px 100px 100px 100px 100px;
         margin-top: 50px;
     }
-   
+    .avail{
+        flex-direction: column;
+    }
+    .omniflex{
+        flex-direction: column;
+    }
+    .total-client{
+        width: 400px;
+    }
+    .usecase-grid{
+        display: grid;
+        gap: 50px 100px;
+       
+        grid-template-columns: 95%;
+        grid-template-rows: 200px;
+    }
+
+    #head-img{
+        display: none;
+    }
+    .checkbtn{
+        display: block;
+    }
+   #gridfooter{
+       margin-left: 0px;
+     
+       width: 95%;
+       grid-template-columns: 17% 17% 17% 17% 17%;
+   }
+   #gridfooter > div > div {
+       font-size: 15px;
+   }
+  
+   #clickableImage{
+       display: none;
+   }
+ 
+   #int-img,#smat-img > img {
+       width: 80%;
+      
+       margin-left: 0px;
+   }
+
 }
