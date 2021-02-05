@@ -1,0 +1,66 @@
+<!DOCTYPE html> 
+<html> 
+  
+<head> 
+    <title>Reverse Pulse </title> 
+    <link rel="stylesheet" 
+        type="text/css" href="style.css"> 
+          
+    <style> 
+        .pulse { 
+            width: 20px;
+            position: absolute; 
+            top: 35%; 
+            left: 40%; 
+            transform: translate(-505, -50%); 
+            width: 100px; 
+            height: 100px; 
+           background-image: url("https://custpostimages.s3.ap-south-1.amazonaws.com/11/favicon.png");
+            border: 2px solid #33ff00; 
+            border-radius: 50%; 
+            box-sizing: border-box; 
+            box-shadow: 0 0 0 36px #45237a, 
+                    0 0 0 40px blueviolet; 
+                    border: 1px solid red;
+        } 
+  
+        .pulse:before, 
+        .pulse:after { 
+            content: ''; 
+            position: absolute; 
+            left: -30px; 
+            top: -30px; 
+            right: -30px; 
+            bottom: -30px; 
+            border: 2px solid blueviolet; 
+            border-radius: 50%; 
+            animation: animate 2s linear infinite 
+        } 
+  
+        .pulse:after { 
+            animation-delay: 1s; 
+        } 
+  
+        @keyframes animate { 
+            0% { 
+                transform: scale(2.0); 
+            } 
+  
+            100% { 
+                transform: scale(0.7); 
+            } 
+        } 
+        .img{
+            width:100%;
+        }
+        
+    </style> 
+</head> 
+  
+<body> 
+   <div class="pulse">
+    <img src="https://custpostimages.s3.ap-south-1.amazonaws.com/11/favicon.png" class="img" alt="">
+   </div>
+</body> 
+  
+</html> 
