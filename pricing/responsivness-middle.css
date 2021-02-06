@@ -1,6 +1,6 @@
 #container{
     display: grid;
-    width: 80%;
+    width: 90%;
     
     margin: auto;
     grid-template:"free try pro enter";
