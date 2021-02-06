@@ -8,6 +8,8 @@ Sources:
 
 - Fonts: [Google Fonts](https://fonts.google.com/)  
 
+- Icons:[Awesome Icon](https://www.w3schools.com/icons/fontawesome5_intro.asp)
+
 ### Members and their Responsibility
 
 1. Anil Pujari -**Home**,**Usercase**,**Blog**,**Navigation Bar**,**Footer**
