@@ -12,20 +12,17 @@ function OriginalColor() {
 b1.addEventListener('mouseover',changeColor);
 b1.addEventListener('mouseout',OriginalColor);
 
-var starter=1400;
-var pro=4700;
-var monthly_st=1800;
-var mon_pro=5500;
-function setMonthly(){
-    if(starter<monthly_st){
-        starter=monthly_st;
-    }
-    if(pro<mon_pro){
-        pro=mon_pro;
+var starpro=[1400,4700];
+var newprices=[1800,5500];
+
+function pressEnter() {
+    if(starpro[0]&&starpro[1]!==(newprices[0]&&newprices[1])){
+        
+        document.getElementById('price').innerHTML="Rs."+newprices[0]+" /month";
+        document.getElementById('pro-price').textContent="Rs."+newprices[1]+" /month";
     }
 }
-
-b1.addEventListener('click',setMonthly);
+b1.addEventListener('click',pressEnter);
 
 
 
